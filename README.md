@@ -15,7 +15,7 @@ More file types will be supported soon.
 To download & install Editor, please visit https://texteditor.to
 
 ### Releases
-To view the latest release & version history, please see [releases](https://github.com/mebsic/Editor/releases/latest).
+To view the latest release & version history, please check [Releases](https://github.com/mebsic/Editor/releases/latest)
 
 ### License
-[MIT License](https://github.com/mebsic/Editor/blob/master/LICENSE)
+Editor uses the general [MIT License](https://github.com/mebsic/Editor/blob/master/LICENSE)
