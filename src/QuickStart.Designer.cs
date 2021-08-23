@@ -122,7 +122,7 @@
             this.btnBlankDoc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBlankDoc.ForeColor = System.Drawing.Color.White;
             this.btnBlankDoc.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBlankDoc.Location = new System.Drawing.Point(497, 290);
+            this.btnBlankDoc.Location = new System.Drawing.Point(498, 290);
             this.btnBlankDoc.Name = "btnBlankDoc";
             this.btnBlankDoc.Size = new System.Drawing.Size(223, 118);
             this.btnBlankDoc.TabIndex = 20;
