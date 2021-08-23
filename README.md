@@ -1,6 +1,9 @@
 ## Welcome to Editor
 Editor is an open-source text editor used to read, write and modify text files.
 
+### License
+[MIT License](https://github.com/mebsic/Editor/blob/master/LICENSE)
+
 ### Supported Types
 - Text Files (*.txt)
 - HTML Files (*.html)
@@ -14,8 +17,4 @@ More file types will be supported soon.
 ### Download
 To download & install Editor, please visit https://texteditor.to
 
-### Releases
-To view the latest release & version history, please check [Releases](https://github.com/mebsic/Editor/releases/latest)
-
-### License
-Editor uses the general [MIT License](https://github.com/mebsic/Editor/blob/master/LICENSE)
+To view the latest release & version history, please visit https://github.com/mebsic/Editor/releases/latest
