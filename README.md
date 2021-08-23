@@ -14,5 +14,8 @@ More file types will be supported soon.
 ### Download
 To download & install Editor, please visit https://texteditor.to
 
+### Releases
+See [releases](https://github.com/mebsic/Editor/releases/latest)
+
 ### License
 [MIT License](https://github.com/mebsic/Editor/blob/master/LICENSE)
