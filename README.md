@@ -1,5 +1,5 @@
 ## Welcome to Editor
-Editor is an open source text editor that allows you to read, write and modify text files.
+Editor is an open-source text editor used to read, write and modify text files.
 
 ### Supported Types
 - Text Files (*.txt)
