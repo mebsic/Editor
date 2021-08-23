@@ -9,8 +9,10 @@ Editor is an open source text editor that allows you to read, write, and modify 
 - YAML Files (*.yml)
 - XML Files (*.xml)
 
+More file types will be supported soon.
+
 ### Download
-To install Editor, visit https://texteditor.to
+To download & install Editor, visit https://texteditor.to
 
 ### License
 [MIT License](https://github.com/mebsic/Editor/blob/master/LICENSE)
