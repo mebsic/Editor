@@ -1,0 +1,5 @@
+C:\Users\tonyd\Desktop\Projects\Other\Editor\Setup\Editor.exe
+C:\Users\tonyd\Desktop\Projects\Other\Editor\Setup\Editor.dll
+C:\Users\tonyd\Desktop\Projects\Other\Editor\Setup\Editor.deps.json
+C:\Users\tonyd\Desktop\Projects\Other\Editor\Setup\Editor.runtimeconfig.json
+C:\Users\tonyd\Desktop\Projects\Other\Editor\Setup\Editor.pdb
