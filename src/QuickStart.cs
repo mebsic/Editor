@@ -5,6 +5,7 @@ using System.Windows.Forms;
 namespace TextEditor {
     public partial class QuickStart : Form {
 
+        public static String FileTypes = "Text Files (*.txt)|*.txt|YAML Files (*.yml)|*.yml|XML Files (*.xml)|*.xml|HTML Files (*.html)|*.html|CSS Files (*.css)|*.css|JavaScript Files (*.js)|*.js|Markdown Files (*.md)|*.md";
         private bool btnBlankDocClicked = false;
         public static OpenFileDialog ofd = new OpenFileDialog();
         public static SaveFileDialog sfd = new SaveFileDialog();
@@ -64,7 +65,7 @@ namespace TextEditor {
 
         private void btnOpen_Click(object sender, EventArgs e) {
 
-            ofd.Filter = "Text Files (*.txt)|*.txt|YAML Files (*.yml)|*.yml|XML Files (*.xml)|*.xml|HTML Files (*.html)|*.html|CSS Files (*.css)|*.css|JavaScript Files (*.js)|*.js";
+            ofd.Filter = FileTypes;
 
             if (ofd.ShowDialog() == DialogResult.OK) {
                 AppContainer cont = new AppContainer();

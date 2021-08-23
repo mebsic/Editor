@@ -23,7 +23,7 @@ namespace TextEditor {
         private void CheckSaveState() {
 
             if (IsFileSaved == false && richTxtBox.Text.Length > 0) {
-                QuickStart.GetSaveFileDialog().Filter = "Text Files (*.txt)|*.txt|YAML Files (*.yml)|*.yml|XML Files (*.xml)|*.xml|HTML Files (*.html)|*.html|CSS Files (*.css)|*.css|JavaScript Files (*.js)|*.js";
+                QuickStart.GetSaveFileDialog().Filter = QuickStart.FileTypes;
                 QuickStart.GetSaveFileDialog().Title = "Save";
 
                 if (QuickStart.GetSaveFileDialog().ShowDialog() == DialogResult.OK) {
@@ -50,7 +50,7 @@ namespace TextEditor {
 
         private void openToolStripButton_Click(object sender, EventArgs e) {
 
-            QuickStart.GetFileDialog().Filter = "Text Files (*.txt)|*.txt|YAML Files (*.yml)|*.yml|XML Files (*.xml)|*.xml|HTML Files (*.html)|*.html|CSS Files (*.css)|*.css|JavaScript Files (*.js)|*.js";
+            QuickStart.GetFileDialog().Filter = QuickStart.FileTypes;
 
             if (QuickStart.GetFileDialog().ShowDialog() == DialogResult.OK) {
 
@@ -68,7 +68,7 @@ namespace TextEditor {
         private void saveToolStripButton_Click(object sender, EventArgs e) {
 
             IsFileSaved = false;
-            QuickStart.GetSaveFileDialog().Filter = "Text Files (*.txt)|*.txt|YAML Files (*.yml)|*.yml|XML Files (*.xml)|*.xml|HTML Files (*.html)|*.html|CSS Files (*.css)|*.css|JavaScript Files (*.js)|*.js";
+            QuickStart.GetSaveFileDialog().Filter = QuickStart.FileTypes;
             QuickStart.GetSaveFileDialog().Title = "Save";
 
             if (QuickStart.GetSaveFileDialog().ShowDialog() == DialogResult.OK) {
@@ -86,7 +86,7 @@ namespace TextEditor {
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e) {
 
-            QuickStart.GetFileDialog().Filter = "Text Files (*.txt)|*.txt|YAML Files (*.yml)|*.yml|XML Files (*.xml)|*.xml|HTML Files (*.html)|*.html|CSS Files (*.css)|*.css|JavaScript Files (*.js)|*.js";
+            QuickStart.GetFileDialog().Filter = QuickStart.FileTypes;
 
             if (QuickStart.GetFileDialog().ShowDialog() == DialogResult.OK) {
 
@@ -104,7 +104,7 @@ namespace TextEditor {
         private void saveToolStripMenuItem_Click(object sender, EventArgs e) {
 
             IsFileSaved = false;
-            QuickStart.GetSaveFileDialog().Filter = "Text Files (*.txt)|*.txt|YAML Files (*.yml)|*.yml|XML Files (*.xml)|*.xml|HTML Files (*.html)|*.html|CSS Files (*.css)|*.css|JavaScript Files (*.js)|*.js";
+            QuickStart.GetSaveFileDialog().Filter = QuickStart.FileTypes;
             QuickStart.GetSaveFileDialog().Title = "Save";
 
             if (QuickStart.GetSaveFileDialog().ShowDialog() == DialogResult.OK) {

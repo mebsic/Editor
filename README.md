@@ -10,10 +10,11 @@ To view the latest release, see [Releases](https://github.com/mebsic/Editor/rele
 ### Supported Types
 - Text Files (*.txt)
 - HTML Files (*.html)
-- JavaScript Files (*.js)
 - CSS Files (*.css)
 - YAML Files (*.yml)
 - XML Files (*.xml)
+- JavaScript Files (*.js)
+- Markdown Files (*.md)
 
 More file types will be supported soon.
 
