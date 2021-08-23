@@ -1,5 +1,5 @@
 ## Weclome to Editor
-Editor is an open source text editor that allows you to read, write, and modify text files.
+Editor is an open source text editor that allows you to read, write and modify text files.
 
 ### Supported Types
 - Text Files (*.txt)
@@ -12,7 +12,7 @@ Editor is an open source text editor that allows you to read, write, and modify 
 More file types will be supported soon.
 
 ### Download
-To download & install Editor, visit https://texteditor.to
+To download & install Editor, please visit https://texteditor.to
 
 ### License
 [MIT License](https://github.com/mebsic/Editor/blob/master/LICENSE)
