@@ -110,7 +110,7 @@ namespace TextEditor {
             if (QuickStart.GetSaveFileDialog().ShowDialog() == DialogResult.OK) {
 
                 this.Text = Path.GetFileName(QuickStart.GetSaveFileDialog().FileName);
-                lblOpened.Text = Path.GetFileName(QuickStart.GetFileDialog().FileName);
+                lblOpened.Text = Path.GetFileName(QuickStart.GetSaveFileDialog().FileName);
 
                 writer = new StreamWriter(QuickStart.GetSaveFileDialog().FileName);
                 writer.Write(richTxtBox.Text);

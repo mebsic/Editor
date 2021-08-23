@@ -91,11 +91,11 @@ namespace TextEditor {
             btnBlankDoc.Enabled = false;
 
             AppContainer cont = new AppContainer();
+
             cont.Text = Path.GetFileName("Blank document");
             cont.lblOpened.Text = Path.GetFileName("Blank document");
 
             cont.IsFileSaved = false;
-
             cont.Show();
             this.Hide();
         }
