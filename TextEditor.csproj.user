@@ -3,15 +3,5 @@
   <PropertyGroup>
     <_LastSelectedProfileId>C:\Users\tonyd\Desktop\Projects\Other\Editor\TextEditor\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
-  <ItemGroup>
-    <Compile Update="src\AboutMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="src\AppContainer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="src\QuickStart.cs">
-      <SubType>Form</SubType>
-    </Compile>
-  </ItemGroup>
+  <ItemGroup />
 </Project>
