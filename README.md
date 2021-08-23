@@ -11,9 +11,9 @@ To view the latest release, see [Releases](https://github.com/mebsic/Editor/rele
 - Text Files (*.txt)
 - HTML Files (*.html)
 - CSS Files (*.css)
+- JavaScript Files (*.js)
 - YAML Files (*.yml)
 - XML Files (*.xml)
-- JavaScript Files (*.js)
 - Markdown Files (*.md)
 
 More file types will be supported soon.
