@@ -29,8 +29,11 @@ namespace TextEditor {
                 if (QuickStart.GetSaveFileDialog().ShowDialog() == DialogResult.OK) {
 
                     this.Text = Path.GetFileName(QuickStart.GetSaveFileDialog().FileName);
+                    lblOpened.Text = Path.GetFileName(QuickStart.GetSaveFileDialog().FileName);
+
                     writer = new StreamWriter(QuickStart.GetSaveFileDialog().FileName);
                     writer.Write(richTxtBox.Text);
+
                     IsFileSaved = true;
                     writer.Close();
                     RelaunchApp();
@@ -52,8 +55,11 @@ namespace TextEditor {
             if (QuickStart.GetFileDialog().ShowDialog() == DialogResult.OK) {
 
                 this.Text = Path.GetFileName(QuickStart.GetFileDialog().FileName);
+                lblOpened.Text = Path.GetFileName(QuickStart.GetFileDialog().FileName);
+
                 reader = new StreamReader(QuickStart.GetFileDialog().FileName);
                 richTxtBox.Text = reader.ReadToEnd();
+
                 IsFileSaved = false;
                 reader.Close();
             }
@@ -68,8 +74,11 @@ namespace TextEditor {
             if (QuickStart.GetSaveFileDialog().ShowDialog() == DialogResult.OK) {
 
                 this.Text = Path.GetFileName(QuickStart.GetSaveFileDialog().FileName);
+                lblOpened.Text = Path.GetFileName(QuickStart.GetSaveFileDialog().FileName);
+
                 writer = new StreamWriter(QuickStart.GetSaveFileDialog().FileName);
                 writer.Write(richTxtBox.Text);
+
                 IsFileSaved = true;
                 writer.Close();
             }
@@ -82,8 +91,11 @@ namespace TextEditor {
             if (QuickStart.GetFileDialog().ShowDialog() == DialogResult.OK) {
 
                 this.Text = Path.GetFileName(QuickStart.GetFileDialog().FileName);
+                lblOpened.Text = Path.GetFileName(QuickStart.GetFileDialog().FileName);
+
                 reader = new StreamReader(QuickStart.GetFileDialog().FileName);
                 richTxtBox.Text = reader.ReadToEnd();
+
                 IsFileSaved = false;
                 reader.Close();
             }
@@ -98,8 +110,11 @@ namespace TextEditor {
             if (QuickStart.GetSaveFileDialog().ShowDialog() == DialogResult.OK) {
 
                 this.Text = Path.GetFileName(QuickStart.GetSaveFileDialog().FileName);
+                lblOpened.Text = Path.GetFileName(QuickStart.GetFileDialog().FileName);
+
                 writer = new StreamWriter(QuickStart.GetSaveFileDialog().FileName);
                 writer.Write(richTxtBox.Text);
+
                 IsFileSaved = true;
                 writer.Close();
             }
@@ -162,12 +177,16 @@ namespace TextEditor {
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e) {
             this.Text = Path.GetFileName("Blank document");
+            lblOpened.Text = Path.GetFileName("Blank document");
+
             richTxtBox.Clear();
             IsFileSaved = false;
         }
 
         private void newToolStripButton_Click(object sender, EventArgs e) {
             this.Text = Path.GetFileName("Blank document");
+            lblOpened.Text = Path.GetFileName("Blank document");
+
             richTxtBox.Clear();
             IsFileSaved = false;
         }

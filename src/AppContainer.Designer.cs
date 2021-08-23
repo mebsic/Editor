@@ -51,12 +51,15 @@
             this.cutToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.copyToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.pasteToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.richTxtBox = new System.Windows.Forms.RichTextBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnMin = new System.Windows.Forms.Button();
             this.btnMax = new System.Windows.Forms.Button();
+            this.lblOpened = new System.Windows.Forms.Label();
+            this.panelBottom = new System.Windows.Forms.Panel();
+            this.richTxtBox = new System.Windows.Forms.RichTextBox();
             this.menuStripItems.SuspendLayout();
             this.toolStrip.SuspendLayout();
+            this.panelBottom.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStripItems
@@ -71,7 +74,7 @@
             this.aboutToolStripMenuItem});
             this.menuStripItems.Location = new System.Drawing.Point(0, 0);
             this.menuStripItems.Name = "menuStripItems";
-            this.menuStripItems.Size = new System.Drawing.Size(1229, 33);
+            this.menuStripItems.Size = new System.Drawing.Size(1400, 33);
             this.menuStripItems.TabIndex = 0;
             this.menuStripItems.Text = "menuStripItems";
             // 
@@ -287,7 +290,7 @@
             this.toolStrip.Location = new System.Drawing.Point(0, 33);
             this.toolStrip.Name = "toolStrip";
             this.toolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolStrip.Size = new System.Drawing.Size(1229, 34);
+            this.toolStrip.Size = new System.Drawing.Size(1400, 34);
             this.toolStrip.TabIndex = 2;
             this.toolStrip.Text = "toolStrip";
             // 
@@ -382,19 +385,6 @@
             this.pasteToolStripButton.ToolTipText = "Paste";
             this.pasteToolStripButton.Click += new System.EventHandler(this.pasteToolStripButton_Click);
             // 
-            // richTxtBox
-            // 
-            this.richTxtBox.BackColor = System.Drawing.Color.White;
-            this.richTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTxtBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTxtBox.Font = new System.Drawing.Font("Consolas", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.richTxtBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.richTxtBox.Location = new System.Drawing.Point(0, 67);
-            this.richTxtBox.Name = "richTxtBox";
-            this.richTxtBox.Size = new System.Drawing.Size(1229, 876);
-            this.richTxtBox.TabIndex = 3;
-            this.richTxtBox.Text = "";
-            // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -404,7 +394,7 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnClose.ForeColor = System.Drawing.Color.DimGray;
-            this.btnClose.Location = new System.Drawing.Point(1166, -4);
+            this.btnClose.Location = new System.Drawing.Point(1337, -4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(66, 47);
             this.btnClose.TabIndex = 4;
@@ -425,7 +415,7 @@
             this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMin.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMin.ForeColor = System.Drawing.Color.DimGray;
-            this.btnMin.Location = new System.Drawing.Point(1027, 1);
+            this.btnMin.Location = new System.Drawing.Point(1198, 1);
             this.btnMin.Name = "btnMin";
             this.btnMin.Size = new System.Drawing.Size(66, 40);
             this.btnMin.TabIndex = 5;
@@ -442,7 +432,7 @@
             this.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMax.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMax.ForeColor = System.Drawing.Color.DimGray;
-            this.btnMax.Location = new System.Drawing.Point(1096, 1);
+            this.btnMax.Location = new System.Drawing.Point(1267, 1);
             this.btnMax.Name = "btnMax";
             this.btnMax.Size = new System.Drawing.Size(66, 40);
             this.btnMax.TabIndex = 6;
@@ -450,16 +440,48 @@
             this.btnMax.UseVisualStyleBackColor = true;
             this.btnMax.Click += new System.EventHandler(this.btnMax_Click);
             // 
+            // lblOpened
+            // 
+            this.lblOpened.AutoSize = true;
+            this.lblOpened.Location = new System.Drawing.Point(6, 4);
+            this.lblOpened.Name = "lblOpened";
+            this.lblOpened.Size = new System.Drawing.Size(140, 25);
+            this.lblOpened.TabIndex = 7;
+            this.lblOpened.Text = "Blank document";
+            // 
+            // panelBottom
+            // 
+            this.panelBottom.Controls.Add(this.lblOpened);
+            this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBottom.Location = new System.Drawing.Point(0, 1072);
+            this.panelBottom.Name = "panelBottom";
+            this.panelBottom.Size = new System.Drawing.Size(1400, 34);
+            this.panelBottom.TabIndex = 8;
+            // 
+            // richTxtBox
+            // 
+            this.richTxtBox.BackColor = System.Drawing.Color.White;
+            this.richTxtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTxtBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTxtBox.Font = new System.Drawing.Font("Consolas", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTxtBox.ForeColor = System.Drawing.Color.Black;
+            this.richTxtBox.Location = new System.Drawing.Point(0, 67);
+            this.richTxtBox.Name = "richTxtBox";
+            this.richTxtBox.Size = new System.Drawing.Size(1400, 1005);
+            this.richTxtBox.TabIndex = 9;
+            this.richTxtBox.Text = "";
+            // 
             // AppContainer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1229, 943);
+            this.ClientSize = new System.Drawing.Size(1400, 1106);
+            this.Controls.Add(this.richTxtBox);
+            this.Controls.Add(this.panelBottom);
             this.Controls.Add(this.btnMin);
             this.Controls.Add(this.btnMax);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.richTxtBox);
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.menuStripItems);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -474,6 +496,8 @@
             this.menuStripItems.PerformLayout();
             this.toolStrip.ResumeLayout(false);
             this.toolStrip.PerformLayout();
+            this.panelBottom.ResumeLayout(false);
+            this.panelBottom.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -515,9 +539,11 @@
         private System.Windows.Forms.ToolStripButton cutToolStripButton;
         private System.Windows.Forms.ToolStripButton copyToolStripButton;
         private System.Windows.Forms.ToolStripButton pasteToolStripButton;
-        public System.Windows.Forms.RichTextBox richTxtBox;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnMin;
         private System.Windows.Forms.Button btnMax;
+        private System.Windows.Forms.Panel panelBottom;
+        public System.Windows.Forms.RichTextBox richTxtBox;
+        public System.Windows.Forms.Label lblOpened;
     }
 }

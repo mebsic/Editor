@@ -70,8 +70,11 @@ namespace TextEditor {
                 AppContainer cont = new AppContainer();
 
                 cont.Text = Path.GetFileName(ofd.FileName);
+                cont.lblOpened.Text = Path.GetFileName(ofd.FileName);
+
                 AppContainer.reader = new StreamReader(ofd.FileName);
                 cont.richTxtBox.Text = AppContainer.reader.ReadToEnd();
+
                 AppContainer.reader.Close();
                 cont.IsFileSaved = false;
 
@@ -89,6 +92,8 @@ namespace TextEditor {
 
             AppContainer cont = new AppContainer();
             cont.Text = Path.GetFileName("Blank document");
+            cont.lblOpened.Text = Path.GetFileName("Blank document");
+
             cont.IsFileSaved = false;
 
             cont.Show();

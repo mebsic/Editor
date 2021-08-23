@@ -122,7 +122,7 @@
             this.btnBlankDoc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnBlankDoc.ForeColor = System.Drawing.Color.White;
             this.btnBlankDoc.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnBlankDoc.Location = new System.Drawing.Point(544, 288);
+            this.btnBlankDoc.Location = new System.Drawing.Point(502, 290);
             this.btnBlankDoc.Name = "btnBlankDoc";
             this.btnBlankDoc.Size = new System.Drawing.Size(223, 118);
             this.btnBlankDoc.TabIndex = 20;
@@ -137,7 +137,7 @@
             this.lblTemplate.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblTemplate.Font = new System.Drawing.Font("Segoe UI Semilight", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTemplate.ForeColor = System.Drawing.Color.Gray;
-            this.lblTemplate.Location = new System.Drawing.Point(223, 202);
+            this.lblTemplate.Location = new System.Drawing.Point(181, 206);
             this.lblTemplate.Name = "lblTemplate";
             this.lblTemplate.Size = new System.Drawing.Size(365, 57);
             this.lblTemplate.TabIndex = 19;
@@ -153,7 +153,7 @@
             this.btnContinue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnContinue.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnContinue.ForeColor = System.Drawing.Color.White;
-            this.btnContinue.Location = new System.Drawing.Point(604, 592);
+            this.btnContinue.Location = new System.Drawing.Point(536, 589);
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.Size = new System.Drawing.Size(149, 38);
             this.btnContinue.TabIndex = 6;
@@ -170,7 +170,7 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(439, 592);
+            this.btnCancel.Location = new System.Drawing.Point(371, 589);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(149, 38);
             this.btnCancel.TabIndex = 21;
@@ -189,7 +189,7 @@
             this.panelCreateBlankDoc.Controls.Add(this.btnContinue);
             this.panelCreateBlankDoc.Location = new System.Drawing.Point(249, 2);
             this.panelCreateBlankDoc.Name = "panelCreateBlankDoc";
-            this.panelCreateBlankDoc.Size = new System.Drawing.Size(781, 658);
+            this.panelCreateBlankDoc.Size = new System.Drawing.Size(714, 658);
             this.panelCreateBlankDoc.TabIndex = 19;
             // 
             // btnMin
@@ -201,7 +201,7 @@
             this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMin.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnMin.ForeColor = System.Drawing.Color.LightGray;
-            this.btnMin.Location = new System.Drawing.Point(648, -5);
+            this.btnMin.Location = new System.Drawing.Point(580, -5);
             this.btnMin.Name = "btnMin";
             this.btnMin.Size = new System.Drawing.Size(65, 40);
             this.btnMin.TabIndex = 22;
@@ -218,7 +218,7 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnClose.ForeColor = System.Drawing.Color.LightGray;
-            this.btnClose.Location = new System.Drawing.Point(715, -4);
+            this.btnClose.Location = new System.Drawing.Point(647, -4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(65, 40);
             this.btnClose.TabIndex = 21;
@@ -235,7 +235,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(1029, 663);
+            this.ClientSize = new System.Drawing.Size(960, 663);
             this.Controls.Add(this.btnBlankDoc);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelCreateBlankDoc);
