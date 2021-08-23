@@ -15,6 +15,7 @@ Editor is an open-source text editor used to read, write and modify text files.
 More file types will be supported soon.
 
 ### Download
-To download & install Editor, please visit https://texteditor.to
+To install Editor, visit https://texteditor.to
 
-To view the latest release & version history, please visit https://github.com/mebsic/Editor/releases/latest
+### Releases
+To view the latest release, see [Releases](https://github.com/mebsic/Editor/releases/latest)
