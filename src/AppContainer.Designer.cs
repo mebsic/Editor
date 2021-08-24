@@ -77,6 +77,9 @@
             this.menuStripItems.Size = new System.Drawing.Size(1400, 33);
             this.menuStripItems.TabIndex = 0;
             this.menuStripItems.Text = "menuStripItems";
+            this.menuStripItems.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
+            this.menuStripItems.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_MouseMove);
+            this.menuStripItems.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel_MouseUp);
             // 
             // fileToolStripMenuItem1
             // 
@@ -293,6 +296,9 @@
             this.toolStrip.Size = new System.Drawing.Size(1400, 34);
             this.toolStrip.TabIndex = 2;
             this.toolStrip.Text = "toolStrip";
+            this.toolStrip.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
+            this.toolStrip.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_MouseMove);
+            this.toolStrip.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel_MouseUp);
             // 
             // newToolStripButton
             // 

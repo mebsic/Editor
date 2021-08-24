@@ -196,6 +196,25 @@ namespace TextEditor {
             this.Hide();
         }
 
+        private void panel_MouseDown(object sender, MouseEventArgs e) {
+
+            Program.offset.X = e.X;
+            Program.offset.Y = e.Y;
+            Program.mouseDown = true;
+        }
+
+        private void panel_MouseMove(object sender, MouseEventArgs e) {
+
+            if (Program.mouseDown == true) {
+                Point currentScreenPos = PointToScreen(e.Location);
+                Location = new Point(currentScreenPos.X - Program.offset.X, currentScreenPos.Y - Program.offset.Y);
+            }
+        }
+
+        private void panel_MouseUp(object sender, MouseEventArgs e) {
+            Program.mouseDown = false;
+        }
+
         private void AppContainer_FormClosing(object sender, FormClosingEventArgs e) {
             CheckSaveState();
         }

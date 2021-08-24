@@ -26,11 +26,12 @@
             this.lblTemplate = new System.Windows.Forms.Label();
             this.btnContinue = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.panelCreateBlankDoc = new System.Windows.Forms.Panel();
+            this.panelTop = new System.Windows.Forms.Panel();
             this.btnMin = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.panelSide = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
-            this.panelCreateBlankDoc.SuspendLayout();
+            this.panelTop.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblQuickStart
@@ -85,6 +86,7 @@
             // 
             this.panelMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelMenu.BackColor = System.Drawing.Color.White;
+            this.panelMenu.Controls.Add(this.panelSide);
             this.panelMenu.Controls.Add(this.btnAbout);
             this.panelMenu.Controls.Add(this.lblQuickStart);
             this.panelMenu.Controls.Add(this.btnBrowse);
@@ -178,19 +180,22 @@
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // panelCreateBlankDoc
+            // panelTop
             // 
-            this.panelCreateBlankDoc.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panelCreateBlankDoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.panelCreateBlankDoc.Controls.Add(this.btnMin);
-            this.panelCreateBlankDoc.Controls.Add(this.btnCancel);
-            this.panelCreateBlankDoc.Controls.Add(this.btnClose);
-            this.panelCreateBlankDoc.Controls.Add(this.lblTemplate);
-            this.panelCreateBlankDoc.Controls.Add(this.btnContinue);
-            this.panelCreateBlankDoc.Location = new System.Drawing.Point(249, 2);
-            this.panelCreateBlankDoc.Name = "panelCreateBlankDoc";
-            this.panelCreateBlankDoc.Size = new System.Drawing.Size(714, 658);
-            this.panelCreateBlankDoc.TabIndex = 19;
+            this.panelTop.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.panelTop.Controls.Add(this.btnMin);
+            this.panelTop.Controls.Add(this.btnClose);
+            this.panelTop.Controls.Add(this.btnContinue);
+            this.panelTop.Controls.Add(this.btnCancel);
+            this.panelTop.Controls.Add(this.lblTemplate);
+            this.panelTop.Location = new System.Drawing.Point(249, 2);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(714, 658);
+            this.panelTop.TabIndex = 19;
+            this.panelTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseDown);
+            this.panelTop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseMove);
+            this.panelTop.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseUp);
             // 
             // btnMin
             // 
@@ -230,6 +235,17 @@
             this.btnClose.MouseLeave += new System.EventHandler(this.btnClose_MouseLeave);
             this.btnClose.MouseHover += new System.EventHandler(this.btnClose_MouseHover);
             // 
+            // panelSide
+            // 
+            this.panelSide.BackColor = System.Drawing.Color.Transparent;
+            this.panelSide.Location = new System.Drawing.Point(7, 22);
+            this.panelSide.Name = "panelSide";
+            this.panelSide.Size = new System.Drawing.Size(244, 50);
+            this.panelSide.TabIndex = 23;
+            this.panelSide.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseDown);
+            this.panelSide.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseMove);
+            this.panelSide.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseUp);
+            // 
             // QuickStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -238,7 +254,7 @@
             this.ClientSize = new System.Drawing.Size(960, 663);
             this.Controls.Add(this.btnBlankDoc);
             this.Controls.Add(this.panelMenu);
-            this.Controls.Add(this.panelCreateBlankDoc);
+            this.Controls.Add(this.panelTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -249,8 +265,8 @@
             this.Load += new System.EventHandler(this.QuickStart_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
-            this.panelCreateBlankDoc.ResumeLayout(false);
-            this.panelCreateBlankDoc.PerformLayout();
+            this.panelTop.ResumeLayout(false);
+            this.panelTop.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -265,8 +281,9 @@
         private System.Windows.Forms.Label lblTemplate;
         private System.Windows.Forms.Button btnContinue;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Panel panelCreateBlankDoc;
         private System.Windows.Forms.Button btnMin;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Panel panelTop;
+        private System.Windows.Forms.Panel panelSide;
     }
 }

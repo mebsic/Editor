@@ -62,7 +62,7 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnClose.ForeColor = System.Drawing.Color.DimGray;
-            this.btnClose.Location = new System.Drawing.Point(480, 1);
+            this.btnClose.Location = new System.Drawing.Point(481, 1);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(65, 40);
             this.btnClose.TabIndex = 22;
@@ -78,12 +78,14 @@
             // 
             this.panel.BackColor = System.Drawing.Color.Transparent;
             this.panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel.Location = new System.Drawing.Point(0, 0);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(549, 322);
+            this.panel.Size = new System.Drawing.Size(549, 41);
             this.panel.TabIndex = 23;
+            this.panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
+            this.panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_MouseMove);
+            this.panel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel_MouseUp);
             // 
             // AboutMenu
             // 

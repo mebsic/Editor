@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
@@ -46,6 +47,10 @@ namespace TextEditor {
             btnClose.ForeColor = System.Drawing.Color.White;
         }
 
+        private void panelTop_MouseUp(object sender, MouseEventArgs e) {
+            Program.mouseDown = false;
+        }
+
         private void btnClose_Click(object sender, EventArgs e) {
             Application.Exit();
             Environment.Exit(0);
@@ -54,6 +59,21 @@ namespace TextEditor {
         private void QuickStart_FormClosing(object sender, FormClosingEventArgs e) {
             Application.Exit();
             Environment.Exit(0);
+        }
+
+        private void panelTop_MouseDown(object sender, MouseEventArgs e) {
+
+            Program.offset.X = e.X;
+            Program.offset.Y = e.Y;
+            Program.mouseDown = true;
+        }
+
+        private void panelTop_MouseMove(object sender, MouseEventArgs e) {
+
+            if (Program.mouseDown == true) {
+                Point currentScreenPos = PointToScreen(e.Location);
+                Location = new Point(currentScreenPos.X - Program.offset.X, currentScreenPos.Y - Program.offset.Y);
+            }
         }
 
         private void QuickStart_Load(object sender, EventArgs e) {
