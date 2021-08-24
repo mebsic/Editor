@@ -78,10 +78,11 @@
             // 
             this.panel.BackColor = System.Drawing.Color.Transparent;
             this.panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel.Location = new System.Drawing.Point(0, 0);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(549, 41);
+            this.panel.Size = new System.Drawing.Size(549, 322);
             this.panel.TabIndex = 23;
             this.panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
             this.panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_MouseMove);
