@@ -1,9 +1,6 @@
 ## Welcome to Editor
 Editor is an open-source text editor used to read, write and modify text files.
 
-### Download
-To install Editor, visit https://texteditor.to
-
 ### Releases
 To view the latest release, see [Releases](https://github.com/mebsic/Editor/releases/latest)
 
