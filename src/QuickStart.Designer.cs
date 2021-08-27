@@ -21,6 +21,7 @@
             this.btnBrowse = new System.Windows.Forms.Button();
             this.btnNewDocument = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.panelSide = new System.Windows.Forms.Panel();
             this.btnAbout = new System.Windows.Forms.Button();
             this.btnBlankDoc = new System.Windows.Forms.Button();
             this.lblTemplate = new System.Windows.Forms.Label();
@@ -29,7 +30,6 @@
             this.panelTop = new System.Windows.Forms.Panel();
             this.btnMin = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.panelSide = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelTop.SuspendLayout();
             this.SuspendLayout();
@@ -86,15 +86,26 @@
             // 
             this.panelMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelMenu.BackColor = System.Drawing.Color.White;
-            this.panelMenu.Controls.Add(this.panelSide);
             this.panelMenu.Controls.Add(this.btnAbout);
             this.panelMenu.Controls.Add(this.lblQuickStart);
             this.panelMenu.Controls.Add(this.btnBrowse);
             this.panelMenu.Controls.Add(this.btnNewDocument);
+            this.panelMenu.Controls.Add(this.panelSide);
             this.panelMenu.Location = new System.Drawing.Point(-6, -20);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(251, 712);
             this.panelMenu.TabIndex = 13;
+            // 
+            // panelSide
+            // 
+            this.panelSide.BackColor = System.Drawing.Color.Transparent;
+            this.panelSide.Location = new System.Drawing.Point(7, 22);
+            this.panelSide.Name = "panelSide";
+            this.panelSide.Size = new System.Drawing.Size(244, 658);
+            this.panelSide.TabIndex = 23;
+            this.panelSide.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseDown);
+            this.panelSide.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseMove);
+            this.panelSide.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseUp);
             // 
             // btnAbout
             // 
@@ -234,17 +245,6 @@
             this.btnClose.MouseEnter += new System.EventHandler(this.btnClose_MouseEnter);
             this.btnClose.MouseLeave += new System.EventHandler(this.btnClose_MouseLeave);
             this.btnClose.MouseHover += new System.EventHandler(this.btnClose_MouseHover);
-            // 
-            // panelSide
-            // 
-            this.panelSide.BackColor = System.Drawing.Color.Transparent;
-            this.panelSide.Location = new System.Drawing.Point(7, 22);
-            this.panelSide.Name = "panelSide";
-            this.panelSide.Size = new System.Drawing.Size(244, 50);
-            this.panelSide.TabIndex = 23;
-            this.panelSide.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseDown);
-            this.panelSide.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseMove);
-            this.panelSide.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseUp);
             // 
             // QuickStart
             // 
