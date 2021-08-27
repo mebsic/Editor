@@ -6,7 +6,7 @@ using System.Windows.Forms;
 namespace TextEditor {
     public partial class QuickStart : Form {
 
-        public static String FileTypes = "Text Files (*.txt)|*.txt|YAML Files (*.yml)|*.yml|XML Files (*.xml)|*.xml|HTML Files (*.html)|*.html|CSS Files (*.css)|*.css|JavaScript Files (*.js)|*.js|Markdown Files (*.md)|*.md";
+        public static String FileTypes = "Text File (*.txt)|*.txt|YAML File (*.yml)|*.yml|XML File (*.xml)|*.xml|HTML File (*.html)|*.html|CSS File (*.css)|*.css|JavaScript File (*.js)|*.js|Markdown File (*.md)|*.md";
         private bool btnBlankDocClicked = false;
         public static OpenFileDialog ofd = new OpenFileDialog();
         public static SaveFileDialog sfd = new SaveFileDialog();

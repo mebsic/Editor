@@ -13,7 +13,7 @@ namespace TextEditor {
         }
 
         private void btnClose_MouseLeave(object sender, EventArgs e) {
-            btnClose.ForeColor = System.Drawing.Color.DimGray;
+            btnClose.ForeColor = System.Drawing.Color.Black;
         }
 
         private void btnClose_MouseHover(object sender, EventArgs e) {

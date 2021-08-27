@@ -141,10 +141,6 @@ namespace TextEditor {
             this.MaximumSize = screen.WorkingArea.Size;
         }
 
-        private void printDocument_PrintPage(object sender, PrintPageEventArgs e) {
-            e.Graphics.DrawString(richTxtBox.Text, new Font(fontDialog.Font.FontFamily, fontDialog.Font.Size, fontDialog.Font.Style), Brushes.Black, 100, 100);
-        }
-
         private void printToolStripMenuItem_Click(object sender, EventArgs e) {
             dialog.Document = document;
 
@@ -221,6 +217,10 @@ namespace TextEditor {
             }
         }
 
+        private void printDocument_PrintPage(object sender, PrintPageEventArgs e) {
+            e.Graphics.DrawString(richTxtBox.Text, new Font(fontDialog.Font.FontFamily, fontDialog.Font.Size, fontDialog.Font.Style), Brushes.Black, 100, 100);
+        }
+
         private void panel_MouseUp(object sender, MouseEventArgs e) {
             Program.mouseDown = false;
         }
@@ -282,7 +282,7 @@ namespace TextEditor {
         }
 
         private void btnClose_MouseLeave(object sender, EventArgs e) {
-            btnClose.ForeColor = System.Drawing.Color.DimGray;
+            btnClose.ForeColor = System.Drawing.Color.Black;
         }
 
         private void btnClose_MouseHover(object sender, EventArgs e) {
