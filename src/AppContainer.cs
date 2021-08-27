@@ -233,6 +233,14 @@ namespace TextEditor {
             CheckSaveState();
         }
 
+        private void undoToolStripButton_Click(object sender, EventArgs e) {
+            richTxtBox.Undo();
+        }
+
+        private void redoToolStripButton_Click(object sender, EventArgs e) {
+            richTxtBox.Redo();
+        }
+
         private void undoToolStripMenuItem_Click(object sender, EventArgs e) {
             richTxtBox.Undo();
         }
@@ -257,10 +265,6 @@ namespace TextEditor {
             richTxtBox.SelectAll();
         }
 
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e) {
-            new AboutMenu().Show();
-        }
-
         private void cutToolStripButton_Click(object sender, EventArgs e) {
             richTxtBox.Cut();
         }
@@ -275,6 +279,10 @@ namespace TextEditor {
 
         private void btnClose_Click(object sender, EventArgs e) {
             CheckSaveState();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e) {
+            new AboutMenu().Show();
         }
 
         private void btnMin_Click(object sender, EventArgs e) {

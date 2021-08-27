@@ -53,6 +53,8 @@
             this.cutToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.copyToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.pasteToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.undoToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.redoToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnMin = new System.Windows.Forms.Button();
             this.btnMax = new System.Windows.Forms.Button();
@@ -309,11 +311,13 @@
             this.printToolStripButton,
             this.cutToolStripButton,
             this.copyToolStripButton,
-            this.pasteToolStripButton});
+            this.pasteToolStripButton,
+            this.undoToolStripButton,
+            this.redoToolStripButton});
             this.toolStrip.Location = new System.Drawing.Point(0, 33);
             this.toolStrip.Name = "toolStrip";
             this.toolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolStrip.Size = new System.Drawing.Size(1400, 34);
+            this.toolStrip.Size = new System.Drawing.Size(1400, 37);
             this.toolStrip.TabIndex = 2;
             this.toolStrip.Text = "toolStrip";
             this.toolStrip.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
@@ -394,7 +398,7 @@
             this.copyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripButton.Name = "copyToolStripButton";
             this.copyToolStripButton.Size = new System.Drawing.Size(34, 29);
-            this.copyToolStripButton.Text = "🖫";
+            this.copyToolStripButton.Text = "📑";
             this.copyToolStripButton.ToolTipText = "Copy";
             this.copyToolStripButton.Click += new System.EventHandler(this.copyToolStripButton_Click);
             // 
@@ -410,6 +414,28 @@
             this.pasteToolStripButton.Text = "📋";
             this.pasteToolStripButton.ToolTipText = "Paste";
             this.pasteToolStripButton.Click += new System.EventHandler(this.pasteToolStripButton_Click);
+            // 
+            // undoToolStripButton
+            // 
+            this.undoToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.undoToolStripButton.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.undoToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.undoToolStripButton.Name = "undoToolStripButton";
+            this.undoToolStripButton.Size = new System.Drawing.Size(34, 32);
+            this.undoToolStripButton.Text = "↩️";
+            this.undoToolStripButton.ToolTipText = "Undo";
+            this.undoToolStripButton.Click += new System.EventHandler(this.undoToolStripButton_Click);
+            // 
+            // redoToolStripButton
+            // 
+            this.redoToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.redoToolStripButton.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.redoToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.redoToolStripButton.Name = "redoToolStripButton";
+            this.redoToolStripButton.Size = new System.Drawing.Size(34, 32);
+            this.redoToolStripButton.Text = "↪️";
+            this.redoToolStripButton.ToolTipText = "Redo";
+            this.redoToolStripButton.Click += new System.EventHandler(this.redoToolStripButton_Click);
             // 
             // btnClose
             // 
@@ -491,9 +517,9 @@
             this.richTxtBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTxtBox.Font = new System.Drawing.Font("Consolas", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTxtBox.ForeColor = System.Drawing.Color.Black;
-            this.richTxtBox.Location = new System.Drawing.Point(0, 67);
+            this.richTxtBox.Location = new System.Drawing.Point(0, 70);
             this.richTxtBox.Name = "richTxtBox";
-            this.richTxtBox.Size = new System.Drawing.Size(1400, 1005);
+            this.richTxtBox.Size = new System.Drawing.Size(1400, 1002);
             this.richTxtBox.TabIndex = 9;
             this.richTxtBox.Text = "";
             this.richTxtBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTxtBox_KeyPress);
@@ -574,5 +600,7 @@
         public System.Windows.Forms.Label lblOpened;
         private System.Windows.Forms.ToolStripMenuItem boldTextToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem italicTextToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton undoToolStripButton;
+        private System.Windows.Forms.ToolStripButton redoToolStripButton;
     }
 }
