@@ -77,7 +77,7 @@ namespace TextEditor {
                 lblOpened.Text = Path.GetFileName(QuickStart.GetSaveFileDialog().FileName);
 
                 writer = new StreamWriter(QuickStart.GetSaveFileDialog().FileName);
-                writer.Write(richTxtBox.Text);
+                writer.Write(richTxtBox.Text.ToString());
 
                 IsFileSaved = true;
                 writer.Close();
@@ -113,7 +113,7 @@ namespace TextEditor {
                 lblOpened.Text = Path.GetFileName(QuickStart.GetSaveFileDialog().FileName);
 
                 writer = new StreamWriter(QuickStart.GetSaveFileDialog().FileName);
-                writer.Write(richTxtBox.Text);
+                writer.Write(richTxtBox.Text.ToString());
 
                 IsFileSaved = true;
                 writer.Close();
@@ -158,6 +158,16 @@ namespace TextEditor {
 
             if (dialog.ShowDialog() == DialogResult.OK) {
                 document.Print();
+            }
+        }
+
+        private void richTxtBox_KeyPress(object sender, KeyPressEventArgs e) {
+
+            richTxtBox.Multiline = true;
+            richTxtBox.AcceptsTab = true;
+
+            if (e.KeyChar == 9) {
+                e.Handled = false;
             }
         }
 
@@ -285,6 +295,14 @@ namespace TextEditor {
 
         private void btnClose_MouseDown(object sender, MouseEventArgs e) {
             btnClose.ForeColor = System.Drawing.Color.White;
+        }
+
+        private void boldTextToolStripMenuItem_Click(object sender, EventArgs e) {
+            richTxtBox.SelectionFont = new Font(richTxtBox.Font, richTxtBox.SelectionFont.Style ^ FontStyle.Bold);
+        }
+
+        private void italicTextToolStripMenuItem_Click(object sender, EventArgs e) {
+            richTxtBox.SelectionFont = new Font(richTxtBox.Font, richTxtBox.SelectionFont.Style ^ FontStyle.Italic);
         }
     }
 }

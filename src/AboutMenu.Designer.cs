@@ -47,11 +47,11 @@
             this.lblVersion.BackColor = System.Drawing.Color.White;
             this.lblVersion.Font = new System.Drawing.Font("Segoe UI Semilight", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.lblVersion.Location = new System.Drawing.Point(183, 173);
+            this.lblVersion.Location = new System.Drawing.Point(172, 173);
             this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(178, 30);
+            this.lblVersion.Size = new System.Drawing.Size(195, 30);
             this.lblVersion.TabIndex = 2;
-            this.lblVersion.Text = "Version 1.5-stable";
+            this.lblVersion.Text = "Version 1.5.2-stable";
             // 
             // btnClose
             // 
@@ -61,7 +61,7 @@
             this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnClose.ForeColor = System.Drawing.Color.DimGray;
+            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.btnClose.Location = new System.Drawing.Point(481, 1);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(65, 40);

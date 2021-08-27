@@ -31,6 +31,8 @@
             this.copyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.selectAllToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.boldTextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.italicTextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.styleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fontSizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fontColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -148,7 +150,9 @@
             this.cutToolStripMenuItem1,
             this.copyToolStripMenuItem1,
             this.pasteToolStripMenuItem1,
-            this.selectAllToolStripMenuItem1});
+            this.selectAllToolStripMenuItem1,
+            this.boldTextToolStripMenuItem,
+            this.italicTextToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(58, 29);
             this.editToolStripMenuItem.Text = "&Edit";
@@ -206,6 +210,22 @@
             this.selectAllToolStripMenuItem1.Size = new System.Drawing.Size(248, 34);
             this.selectAllToolStripMenuItem1.Text = "Select &All";
             this.selectAllToolStripMenuItem1.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
+            // 
+            // boldTextToolStripMenuItem
+            // 
+            this.boldTextToolStripMenuItem.Name = "boldTextToolStripMenuItem";
+            this.boldTextToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
+            this.boldTextToolStripMenuItem.Size = new System.Drawing.Size(248, 34);
+            this.boldTextToolStripMenuItem.Text = "&Bold";
+            this.boldTextToolStripMenuItem.Click += new System.EventHandler(this.boldTextToolStripMenuItem_Click);
+            // 
+            // italicTextToolStripMenuItem
+            // 
+            this.italicTextToolStripMenuItem.Name = "italicTextToolStripMenuItem";
+            this.italicTextToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
+            this.italicTextToolStripMenuItem.Size = new System.Drawing.Size(248, 34);
+            this.italicTextToolStripMenuItem.Text = "&Italic";
+            this.italicTextToolStripMenuItem.Click += new System.EventHandler(this.italicTextToolStripMenuItem_Click);
             // 
             // styleToolStripMenuItem
             // 
@@ -399,7 +419,7 @@
             this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnClose.ForeColor = System.Drawing.Color.DimGray;
+            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.btnClose.Location = new System.Drawing.Point(1337, -4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(66, 47);
@@ -420,7 +440,7 @@
             this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMin.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnMin.ForeColor = System.Drawing.Color.DimGray;
+            this.btnMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.btnMin.Location = new System.Drawing.Point(1198, 1);
             this.btnMin.Name = "btnMin";
             this.btnMin.Size = new System.Drawing.Size(66, 40);
@@ -437,12 +457,12 @@
             this.btnMax.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMax.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnMax.ForeColor = System.Drawing.Color.DimGray;
+            this.btnMax.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnMax.Location = new System.Drawing.Point(1267, 1);
             this.btnMax.Name = "btnMax";
             this.btnMax.Size = new System.Drawing.Size(66, 40);
             this.btnMax.TabIndex = 6;
-            this.btnMax.Text = "⬜";
+            this.btnMax.Text = "❐";
             this.btnMax.UseVisualStyleBackColor = true;
             this.btnMax.Click += new System.EventHandler(this.btnMax_Click);
             // 
@@ -476,6 +496,7 @@
             this.richTxtBox.Size = new System.Drawing.Size(1400, 1005);
             this.richTxtBox.TabIndex = 9;
             this.richTxtBox.Text = "";
+            this.richTxtBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTxtBox_KeyPress);
             // 
             // AppContainer
             // 
@@ -551,5 +572,7 @@
         private System.Windows.Forms.Panel panelBottom;
         public System.Windows.Forms.RichTextBox richTxtBox;
         public System.Windows.Forms.Label lblOpened;
+        private System.Windows.Forms.ToolStripMenuItem boldTextToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem italicTextToolStripMenuItem;
     }
 }
